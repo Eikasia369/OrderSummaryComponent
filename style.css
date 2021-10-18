@@ -1,0 +1,117 @@
+ @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+  background-image: url("images/pattern-background-desktop.svg");
+  background-position: center;
+  background-position-y: 0;
+  background-repeat: no-repeat, repeat;
+  max-width: 1440px;
+  min-width: 375px;
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #717a90;
+  font-weight: 500;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media screen and (max-width: 500px) {
+  body{
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat, repeat; 
+  background-size: 100%;
+  }
+
+  .summary {
+    margin: 1rem;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+
+h1{
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.summary {
+  margin-top: 2rem;
+  background-color: white;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 450px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 1px 4px 4px 2px rgba(57, 42, 225, 0.116);
+}
+
+.hero img{
+  border-radius: 16px 16px 0px 0px;
+  width: 100%;
+  align-self: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+}
+
+.container p {
+  line-height: 5px;
+  align-self: start;
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
+.container p:first-child {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.description {
+  padding: 0rem 3rem 1rem 3rem;
+}
+
+.changePlan a {
+  color: #382ae1;
+  font-weight: 900;
+}
+
+.attribution {
+  margin-top: 2rem;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.payment{
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 5rem 0.7rem 5rem;
+  font-weight: 900;
+  box-shadow: 1px 4px 4px 2px rgba(57, 42, 225, 0.116);
+}
+
+.cancelOrder {
+  color: #717a90;
+  background-color: transparent;
+  border: none;
+  margin: 2rem 0px 2rem 0px;
+  font-weight: 700;
+}
